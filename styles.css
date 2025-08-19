@@ -1,0 +1,145 @@
+@font-face {
+    font-family: odin-font;
+    src: url(Norse-Bold.otf);
+}
+*{
+    margin:0;
+    padding:0;
+}
+html, body {
+    height: 100%; 
+    --left-side-width:40%;
+}
+
+
+
+
+#left-side {
+    width: var(--left-side-width,45%);
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position:center;
+}
+#logo-div {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.46);
+    width: var(--left-side-width,45%);
+    top: 20%;
+    line-height: 10em;  
+    text-align: center; 
+}
+
+#odinLogo {
+    height: 8em;
+    width: 5.5em;
+    vertical-align: middle;
+}
+
+#odinText {
+    font-family: odin-font, sans-serif;
+    color: white;
+    font-size: 6em;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: normal;
+}
+
+
+
+.right-side {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: var(--left-side-width, 40%);
+    top: 0;
+    height: 100%;
+    width: calc(100% - var(--left-side-width, 40%));
+    background-color: #fffcfc;
+}
+
+#disclaimer > p {
+    font-weight:550;
+    font-size:22px;
+    width:50ch;
+    margin-left:5rem;
+    margin-bottom:3rem;
+}
+#disclaimer p:first-child {
+    margin-top:10%;
+}
+.signup{
+    background-color:white;
+    color:#373b42;
+    box-shadow: 0 2px 1px 1px hsl(0, 0%, 85%);
+    padding-left:5em;
+}
+
+#letsdothis{
+    display:block;
+    font-size:22px;
+    font-weight:550;
+    padding-top:1rem;
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+}
+form > div {
+    display:flex;
+    flex-direction:row;
+    gap:3rem;
+}
+
+form > div > div {
+  display: flex;
+  flex-direction: column;
+  margin-top:1rem;
+}
+.passwordDiv {
+  margin-bottom: 2rem;
+}
+
+form label {
+    letter-spacing:.1rem;
+    font-size:12px;
+}
+
+form input {
+    /*fontsize*/
+    border-radius:3px;
+    border-width:1px;
+    padding:5px;
+    width:30ch;
+    border: solid 1px #E5E7EB;
+}
+form label{
+    width:30ch;
+    padding:1px;
+}
+
+#password:invalid, #confirm_password:invalid{
+    border-color:red;
+}
+#createACC{
+    margin-top:1.5rem;
+    height:5ch;
+    width:23ch;
+    background-color:#606c4c;
+    border-color:#606c4c;
+    border:none;
+    color:white;
+    font-weight:bold;
+    border-radius: 7px;
+    margin-left:6em;
+}
+#fakeLogin{
+    display:block;
+    margin-top:2rem;
+    padding-left:5em;
+}
+#fakeLogin > a{
+    color:#606c4c;
+    font-weight:550;
+    text-decoration:none;
+}
